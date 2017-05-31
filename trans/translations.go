@@ -93,7 +93,7 @@ var TRANS = map[string]map[string]string{
 	MESSAGE_TEXT_ASK_DUE: {
 		"ru-RU": "Когда дата возврата?",
 		"en-US": "When is the due date?",
-		"it-IT": "Quand'e' la data di scadenza?",
+		"it-IT": "Data di scadenza?",
 	},
 	MESSAGE_TEXT_ASK_DATE_TO_REMIND: {
 		"ru-RU": `Чтобы задать дату напопинания напишите её в формате <i>ДД.MM.ГОД</i>.
@@ -154,17 +154,17 @@ var TRANS = map[string]map[string]string{
 	COMMAND_TEXT_NO_IT_CAN_BE_RETURNED_ANYTIME: {
 		"ru-RU": "Нет, срок возврата не важен.",
 		"en-US": "No, whenever is fine.",
-		"it-IT": "No, quando gli pare",
+		"it-IT": "No, nessuna scadenza",
 	},
 	COMMAND_TEXT_IT_CAN_BE_RETURNED_ANYTIME: {
 		"ru-RU": "Когда-нибудь",
 		"en-US": "Whenever is fine",
-		"it-IT": "No, quando gli pare",
+		"it-IT": "Nessuna scadenza",
 	},
 	COMMAND_TEXT_IN_FEW_MINUTES: {
 		"ru-RU": "Через минуту",
 		"en-US": "In few minutes",
-		"it-IT": "Fra pochi minuti",
+		"it-IT": "Fra alcuni minuti",
 	},
 	COMMAND_TEXT_IN_1_WEEK: {
 		"ru-RU": "Через неделю",
@@ -284,7 +284,7 @@ var TRANS = map[string]map[string]string{
 	MESSAGE_TEXT_TRANSFER_CREATION_CANCELED: {
 		"ru-RU": "Создание записи о долге отменено.",
 		"en-US": "Creation of debt record has been canceled.",
-		"it-IT": "Creazione di un debito/credito e' stato cancellato",
+		"it-IT": "Creazione record annullata",
 	},
 	COMMAND_TEXT_SHOW_ALL_CONTACTS: {
 		"ru-RU": "Показать все...",
@@ -374,7 +374,7 @@ var TRANS = map[string]map[string]string{
 	"COMMAND_TEXT_LANGUAGE": {
 		"ru-RU": "/Язык приложения",
 		"en-US": "App /language",
-		"it-IT": "Lingua /language",
+		"it-IT": "Lingua",
 	},
 	"/start": {
 		"ru-RU": "/старт",
@@ -416,12 +416,12 @@ var TRANS = map[string]map[string]string{
 	COMMAND_TEXT_GAVE: {
 		"ru-RU": "/Дал",
 		"en-US": "/Gave",
-		"it-IT": "/Debito",
+		"it-IT": "/Credito",
 	},
 	COMMAND_TEXT_GOT: {
 		"ru-RU": "/Взял",
 		"en-US": "/Got",
-		"it-IT": "/Credito",
+		"it-IT": "/Debito",
 	},
 	COMMAND_TEXT_RETURN: {
 		"ru-RU": "/Вернул",
@@ -436,7 +436,7 @@ var TRANS = map[string]map[string]string{
 	COMMAND_TEXT_SETTING: {
 		"ru-RU": "/Настройки",
 		"en-US": "/Settings",
-		"it-IT": "/Impostazioni",
+		"it-IT": "/Settaggi",
 	},
 	COMMAND_TEXT_HIGH_FIVE: {
 		"ru-RU": "Дать пять!",
@@ -491,7 +491,7 @@ You can type manually or choose from your address book (<i>through "clip" icon</
 		"it-IT": `Inserisci un nome per il nuovo contatto:
 Puoi digitarlo o sceglierlo dalla tua rubrica (<i>attraverso l'icona "clip"</i>).
 
-<i>Invia '.' per annullare</i>`,
+<i>Digita '.' ed invia per annullare</i>`,
 	},
 	MESSAGE_TEXT_TRANSFER_IS_CREATING: {
 		"ru-RU": "Создаю запись...",
@@ -579,7 +579,7 @@ Vuoi essere invitato non appena viene rilasciata?`,
 	MESSAGE_TEXT_ASK_LENDING_TYPE: {
 		"ru-RU": "<b>Что вы дали в долг?</b>",
 		"en-US": "<b>What did you lend to someone?</b>",
-		"it-IT": "<b>Che cos'hai prestato?</b>",
+		"it-IT": "<b>Cos'hai prestato?</b>",
 	},
 	MESSAGE_TEXT_CHOOSE_CURRENCY: {
 		"ru-RU": `Выберите из меню внизу экрана или <a>выберите валюту из списка</a>.
@@ -590,34 +590,34 @@ Vuoi essere invitato non appena viene rilasciata?`,
 
 If standard options are not enough simply send a text. For example: "<i>apple</i>".`,
 
-		"it-IT": `Scegli dalle opzioni qui sotto o <a>seleziona una moneta dalla lista</a>.
+		"it-IT": `Scegli dalle opzioni qui sotto o <a>seleziona una valuta dalla lista</a>.
 
-Se le opzioni standard non bastano semplicemente invia un testo. Per esempio: "<i>mele</i>".`,
+Se le opzioni standard non bastano semplicemente invia un testo.  Per esempio: "<i>mele</i>".`,
 	},
 	MESSAGE_TEXT_ASK_LENDING_AMOUNT: {
 		"ru-RU": "Сколько <b>%v</b> вы дали в долг?\n(<i>отправьте '.' чтобы отменить</i>)",
 		"en-US": "How much <b>%v</b> did you lend?\n(<i>send '.' to cancel</i>)",
-		"it-IT": "Quanto hai prestato a <b>%v</b>?\n(<i>invia '.' per annullare</i>)",
+		"it-IT": "Quanti <b>%v</b> hai prestato?\n(<i>Digita '.' ed invia per annullare</i>)",
 	},
 	MESSAGE_TEXT_ASK_LENDING_COUNTERPARTY: {
 		"ru-RU": "Кому вы дали в долг <b>%v</b>?\n(<i>отправьте '.' чтобы отменить</i>)",
 		"en-US": "Who borrowed from you <b>%v</b>?\n(<i>send '.' to cancel</i>)",
-		"it-IT": "A chi hai prestato <b>%v</b>?\n(<i>invia '.' per annullare</i>)",
+		"it-IT": "Chi e' in debito di <b>%v</b> con te?\n(<i>Digita '.' ed invia per annullare</i>)",
 	},
 	MESSAGE_TEXT_ASK_BORROWING_TYPE: {
 		"ru-RU": "Что вы взяли в долг?",
 		"en-US": "What did you lend?",
-		"it-IT": "Cos'hai prestato?",
+		"it-IT": "Cosa ti hanno prestato?",
 	},
 	MESSAGE_TEXT_ASK_BORROWING_AMOUNT: {
 		"ru-RU": "Сколько <b>%v</b> вы взяли в долг?\n(<i>отправьте '.' чтобы отменить</i>)",
 		"en-US": "How much <b>%v</b> did you borrow?\n(<i>send '.' to cancel</i>)",
-		"it-IT": "Quanto ti ha prestato <b>%v</b>?\n(<i>invia '.' per annullare</i>)",
+		"it-IT": "Quanti <b>%v</b> ti hanno prestato?\n(<i>Digita '.' ed invia per annullare</i>)",
 	},
 	MESSAGE_TEXT_ASK_BORROWING_COUNTERPARTY: {
 		"ru-RU": "У кого вы взяли в долг <b>%v</b>?\n(<i>отправьте '.' чтобы отменить</i>)",
 		"en-US": "Who lended to you <b>%v</b>?\n(<i>send '.' to cancel</i>)",
-		"it-IT": "Chi ti ha prestato <b>%v</b>?\n(<i>invia '.' per annullare</i>)",
+		"it-IT": "Chi ti ha prestato <b>%v</b>?\n(<i>Digita '.' ed invia per annullare</i>)",
 	},
 	MESSAGE_TEXT_YOU_CAN_SEND_RECEIPT: {
 		"ru-RU": "Отправить <a receipt>квитанцию</a> для <a counterparty>%v</a>?",
@@ -637,7 +637,7 @@ Se le opzioni standard non bastano semplicemente invia un testo. Per esempio: "<
 	MESSAGE_TEXT_RECEIPT_NEW_DEBT_FROM_USER: {
 		"ru-RU": "{{.Counterparty}} взял(а) в долг {{.Amount}}.",
 		"en-US": "{{.Counterparty}} borrowed from you {{.Amount}}.",
-		"it-IT": "{{.Counterparty}} ti deve dare {{.Amount}}.",
+		"it-IT": "{{.Counterparty}} e' in debito di {{.Amount}} con te.",
 		//"it-IT": "{{.Counterparty}} ha preso in prestito da te {{.Amount}}.",
 	},
 	MESSAGE_TEXT_RECEIPT_NEW_DEBT_TO_USER: {
@@ -658,7 +658,7 @@ Se le opzioni standard non bastano semplicemente invia un testo. Per esempio: "<
 	MESSAGE_TEXT_DUE_ON: {
 		"ru-RU": "<b>Вернуть до</b>: %v",
 		"en-US": "<b>Return till</b>: %v",
-		"it-IT": "<b>Dare a</b>: %v",
+		"it-IT": "<b>Scadenza</b>: %v",
 	},
 	MESSAGE_TEXT_NOTE: {
 		"ru-RU": "Заметка",
@@ -668,7 +668,7 @@ Se le opzioni standard non bastano semplicemente invia un testo. Per esempio: "<
 	MESSAGE_TEXT_COMMENT: {
 		"ru-RU": "Комментарий",
 		"en-US": "Comment",
-		"it-IT": "Commento",
+		"it-IT": "Commenti",
 	},
 	MESSAGE_TEXT_LOGIN_TO_WEB_APP: {
 		"ru-RU": `Перейдите по <a>ссылке</a> чтобы запустить web-приложение.`,
@@ -683,7 +683,7 @@ Se le opzioni standard non bastano semplicemente invia un testo. Per esempio: "<
 	MESSAGE_TEXT_ASK_FOR_FEEDBAK: {
 		"ru-RU": "Будем признетельны если вы оцените работу нашего приложения. Это займёт всего несколько секунд.",
 		"en-US": "We would appreciate if tell us how we doing. It takes just few seconds.",
-		"it-IT": "Ci farebbe piacere se lasciassi un voto per il nostro lavoto. Ti bastano solo alcuni secondi.",
+		"it-IT": "Ci farebbe piacere se lasciassi un voto per il nostro lavoro. Ti bastano solo alcuni secondi.",
 	},
 	COMMAND_TEXT_GIVE_FEEDBACK: {
 		"ru-RU": "Оценить приложение",
@@ -754,7 +754,7 @@ Se le opzioni standard non bastano semplicemente invia un testo. Per esempio: "<
 	MESSAGE_TEXT_COUNTERPARTY_HAS_EMPTY_BALANCE: {
 		"ru-RU": `Нулевой баланс для %v`,
 		"en-US": `Balance is empty for %v`,
-		"it-IT": `Il bilancio di %v e' vuoto al momento`,
+		"it-IT": `Non hai alcun credito o debito con %v`,
 	},
 	MESSAGE_TEXT_ASK_TO_TRANSLATE: {
 		"ru-RU": `Хотите чтобы наш бот разговаривал на другом языке? Вы можете <a>помочь с переводом</a>.`,
@@ -784,7 +784,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 	COMMAND_TEXT_ASK_FOR_FEEDBACK: {
 		"ru-RU": "Оцените наше приложение?",
 		"en-US": "Please rate our app",
-		"it-IT": "Per favore vota la nostra app",
+		"it-IT": "Per favore vota il nostro bot",
 	},
 	COMMAND_TEXT_FEEDBACK_POSITIVE: {
 		"ru-RU": "Да, отличное приложение!",
@@ -809,7 +809,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 	MESSAGE_TEXT_SETTINGS: {
 		"ru-RU": "Что будем настраивать?",
 		"en-US": "What do you want to adjust?",
-		"it-IT": "Cosa miglioreresti",
+		"it-IT": "Cosa vuoi modificare?",
 	},
 	MESSAGE_TEXT_NOT_IMPLEMENTED_YET: {
 		"ru-RU": "Извините, данный функционал ещё не реализован.",
@@ -953,7 +953,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 	MESSAGE_TEXT_CHOOSE_UI_LANGUAGE: {
 		"ru-RU": "На каком языке вы хотели бы общаться со мной?",
 		"en-US": "Which language you would like to talk to me?",
-		"it-IT": "Con quale lingua vuoi chattare con me?",
+		"it-IT": "In quale lingua preferisci parlarmi?",
 	},
 	MESSAGE_TEXT_LOCALE_CHANGED: {
 		"ru-RU": "Вы поменяли язык на %v",
@@ -963,7 +963,7 @@ Per caso vuoi anche <a submit-bug>segnalare un problema</a> oppure <a suggest-id
 	MESSAGE_TEXT_WHATS_NEXT: {
 		"ru-RU": "Что будем делать дальше?",
 		"en-US": "What's next?",
-		"it-IT": "Ed ora? Che faccio?",
+		"it-IT": "Cosa posso fare ora?",
 	},
 	MESSAGE_TEXT_WHATS_NEXT_HINT: {
 		"ru-RU": `
@@ -1005,7 +1005,7 @@ O usa il menu' qui sotto.
 ─────────────
 %v`,
 
-		"it-IT": `<b>%v</b> <i>(ultimo %d):</i>
+		"it-IT": `<b>%v</b> <i>(ultimi %d):</i>
 ─────────────
 %v`,
 	},
@@ -1032,7 +1032,7 @@ O usa il menu' qui sotto.
 	MESSAGE_TEXT_BALANCE_CURRENCY_ROW_DEBT_TO_USER: {
 		"ru-RU": "Вам должны %v",
 		"en-US": "Owes to you %v",
-		"it-IT": "%v e' in debito con te",
+		"it-IT": "Hai un credito di %v",
 	},
 	MESSAGE_TEXT_ON_RETURN_USER_DOES_NOT_OWE_ANYTHING_TO_COUNTERPARTY_ANYMORE: {
 		"ru-RU": "Поздравляем! У вас не осталось долгов перед <b>%v</b>.",
@@ -1047,12 +1047,12 @@ O usa il menu' qui sotto.
 	MESSAGE_TEXT_BALANCE_CURRENCY_ROW_DEBT_BY_USER: {
 		"ru-RU": "Вы должны %v",
 		"en-US": "You owe %v",
-		"it-IT": "Sei in debito con %v",
+		"it-IT": "Hai un debito di %v",
 	},
 	MESSAGE_TEXT_BALANCE_SINGLE_CURRENCY_COUNTERPARTY_DEBT_BY_USER: {
 		"ru-RU": "<b>%v</b> - вы должны %v",
 		"en-US": "<b>%v</b> - you owe %v",
-		"it-IT": "<b>%v</b> - tu gli devi %v",
+		"it-IT": "<b>%v</b> - tu gli/le devi %v",
 	},
 	MESSAGE_TEXT_ASK_PRIMARY_CURRENCY: {
 		"ru-RU": "Какая валюта для вас основная?",
@@ -1077,7 +1077,8 @@ O usa il menu' qui sotto.
 	MESSAGE_TEXT_RETURN_ASK_TO_CHOOSE_COUNTERPARTY: {
 		"ru-RU": "Выберете кому вы вернули долг или кто вернул его вам.",
 		"en-US": "Please choose who returned the debt or to who you returned it.",
-		"it-IT": "Scegli chi ha sanato il suo debito o con chi hai sanato tu il tuo debito",
+		"it-IT": "Scegli con chi hai sanato un credito o un debito.",
+		//"it-IT": "Scegli chi ha sanato il suo debito o con chi hai sanato tu il tuo debito.",
 	},
 	MESSAGE_TEXT_CHOOSE_DEBT_THAT_HAS_BEEN_RETURNED: {
 		"ru-RU": "Выберите долг который был возвращён целиком или частично.",
@@ -1127,7 +1128,7 @@ O usa il menu' qui sotto.
 	MESSAGE_TEXT_COUNTERPARTY_OWES_YOU_SINGLE_DEBT: {
 		"ru-RU": `<b>%v</b> одалживал(а) у вас <b>%v</b>.`,
 		"en-US": `<b>%v</b> owed to you <b>%v</b>.`,
-		"it-IT": `<b>%v</b> ti deve <b>%v</b>.`,
+		"it-IT": `<b>%v</b> e' in debito di <b>%v</b>.`,
 	},
 	MESSAGE_TEXT_YOU_OWE_TO_COUNTERPARTY_SINGLE_DEBT: {
 		"ru-RU": `<b>%v</b> одалживал(а) вам <b>%v</b>.`,
@@ -1143,9 +1144,9 @@ O usa il menu' qui sotto.
 
 		<i>If partially you can enter amount right away.</i>`,
 
-		"it-IT": `Questo debito e' stato completamente saldato?
+		"it-IT": `Il debito e' stato saldato?
 
-		<i>Se la risposta e' NO puoi inserire l'ammontare ora.</i>`,
+		<i>Se la risposta e' NO puoi inserire l'ammontare da sottrarre, direttamente qui sotto.</i>`,
 	},
 	MESSAGE_TEXT_PLEASE_HELP_MAKE_IT_BETTER: {
 		"ru-RU": `Эта программа <b>бесплатна</b>. <a href="https://debtstracker.io/">Помогите</a> сделать её лучше!`,
@@ -1172,7 +1173,7 @@ O usa il menu' qui sotto.
 	BUTTON_TEXT_DEBT_RETURNED_PARTIALLY: {
 		"ru-RU": "Нет, только часть",
 		"en-US": "No, just partially",
-		"it-IT": "No, solo parzialmente",
+		"it-IT": "No, parzialmente",
 	},
 	MESSAGE_TEXT_ATTEMPT_TO_USE_OWN_INVITE: {
 		"ru-RU": "Хорошая попытка пригласить самого себя ;)",
@@ -1408,22 +1409,22 @@ Una volta che il tuo amico accetta l'invito potrete condividere i bilanci ed i t
 	MESSAGE_TEXT_RECEIPT_SENT_THROW_TELEGRAM: {
 		"ru-RU": "Квитанция отправлена через телеграм.",
 		"en-US": "Receipt sent through Telegram.",
-		"it-IT": "Credito/debito inviato tramite Telegram",
+		"it-IT": "Notifica inviata tramite Telegram",
 	},
 	MESSAGE_TEXT_RECEIPT_NOT_SENT_AS_COUNTERPARTY_HAS_DISABLED_TG_BOT: {
 		"ru-RU": "Квитанция НЕ отправлена через телеграм так как %v удалил чат с ботом.",
 		"en-US": "Receipt NOT sent through Telegram as %v has deleted chat with the bot.",
-		"it-IT": "Credito/debito NON inviato tramite Telegram a %v perche' ha cancellato la chat con il bot",
+		"it-IT": "Notifica NON inviata tramite Telegram a %v perche' ha cancellato la chat con il bot",
 	},
 	MESSAGE_TEXT_RECEIPT_SENT_THROW_EMAIL: {
 		"ru-RU": "Квитанция отправлена через email. (id: %v)",
 		"en-US": "Receipt sent through email. (id: %v)",
-		"it-IT": "Credito/debito inviato tramite email (id: %v)",
+		"it-IT": "Notifica inviata tramite email (id: %v)",
 	},
 	MESSAGE_TEXT_RECEIPT_SENT_THROW_SMS: {
 		"ru-RU": "Квитанция отправлена через SMS.",
 		"en-US": "Receipt sent through SMS.",
-		"it-IT": "Credito/debito inviato trmaite SMS",
+		"it-IT": "Notifica inviata tramite SMS",
 	},
 	MESSAGE_TEXT_SWITCH_TO_PM_TO_VIEW_RECEIPT: {
 		"ru-RU": "Переключитьсь на чат с ботом чтобы посмотреть квитанцию",
@@ -1463,12 +1464,12 @@ Una volta che il tuo amico accetta l'invito potrete condividere i bilanci ed i t
 	MESSAGE_TEXT_ASK_HOW_MUCH_HAS_BEEN_RETURNED: {
 		"ru-RU": "Сколько было возвращено?",
 		"en-US": "How much have been returned?",
-		"it-IT": "Quanti soldi ti son stati restituiti?",
+		"it-IT": "Quanto ti e' stato restituito?",
 	},
 	MESSAGE_TEXT_HELP: {
 		"ru-RU": "Вы можете сообщить о проблеме или сделать предложения по улучшению программы на нашем сайте.",
 		"en-US": "Please report any issue or submit a feature request at our website.",
-		"it-IT": "Segnala un problema o proponi una miglioria al nostro sito web.",
+		"it-IT": "Segnala un problema o proponi un miglioramento sul nostro sito web.",
 	},
 	COMMAND_TEXT_OPEN_USER_REPORT: {
 		"ru-RU": "Cтраница поддержки ",
@@ -1744,7 +1745,7 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 	MESSAGE_TEXT_VISIBLE_TO_YOU_AND_COUNTERPARTY: {
 		"ru-RU": "виден вам и %v",
 		"en-US": "visible to you & %v",
-		"it-IT": "visibile a te e %v",
+		"it-IT": "visibile solo a te e %v",
 	},
 	MESSAGE_TEXT_TRANSFER_ASK_FOR_COMMENT: {
 		"ru-RU": "Напишите комментарий:",
@@ -1769,7 +1770,7 @@ Il tuo codice di invito personale e': {{.InviteCode}}`,
 	COMMAND_TEXT_NO_COMMENT_FOR_TRANSFER: {
 		"ru-RU": "Без комментариев",
 		"en-US": "No comments",
-		"it-IT": "No commenti",
+		"it-IT": "Nessun commento",
 	},
 	COMMAND_TEXT_NO_NOTE_FOR_TRANSFER: {
 		"ru-RU": "Без заметок",
